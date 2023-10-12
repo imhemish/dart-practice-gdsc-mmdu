@@ -13,7 +13,7 @@ void main() {
   String source_unit = stdin.readLineSync()!;
   print("Enter degrees: ");
   double degrees = double.parse(stdin.readLineSync()!);
-  if (source_unit.contains("c")) {
+  if (source_unit.toLowerCase().contains("c")) {
     var temp = celsius_to_fahrenheit(degrees);
     print("The temperature in Fahrenheit is ${temp}");
   } else if (source_unit.contains("f")) {
